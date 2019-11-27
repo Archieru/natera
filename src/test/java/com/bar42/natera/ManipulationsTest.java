@@ -8,20 +8,10 @@ import static org.hamcrest.Matchers.equalTo;
 public class ManipulationsTest extends Base
 {
     @Test
-    public void listTrianglesTest()
-    {
-        String testId = getTestTriangleId();
-        ValidatableResponse response = listTriangles();
-        response.statusCode(200);
-        Assert.assertTrue(response.extract().asString().contains(testId));
-    }
-    
-    @Test
     public void getTriangleTest()
     {
         String testId = getTestTriangleId(3,4,5);
-        ValidatableResponse response = getTriangle(testId);
-        response
+        getTriangle(testId)
             .statusCode(200)
             .body("id", equalTo(testId))
             .body("firstSide", equalTo(3.0f))
@@ -32,30 +22,35 @@ public class ManipulationsTest extends Base
     @Test
     public void getTriangleAreaTest()
     {
-        String testId = getTestTriangleId();
-        ValidatableResponse response = getTriangleArea(testId);
-        response.statusCode(200);
-        Assert.assertTrue(response.extract().asString().contains(testId));
+        String testId = getTestTriangleId(3,4,5);
+        getTriangleArea(testId)
+            .statusCode(200)
+            .body("result", equalTo(6.0f));
     }
     
     @Test
     public void getTrianglePerimeterTest()
     {
-        String testId = getTestTriangleId();
-        ValidatableResponse response = getTrianglePerimeter(testId);
-        response.statusCode(200);
-        Assert.assertTrue(response.extract().asString().contains(testId));
+        String testId = getTestTriangleId(3, 4, 5);
+        getTrianglePerimeter(testId)
+            .statusCode(200)
+            .body("result", equalTo(12.0f));
     }
     
     @Test
     public void deleteTriangleTest()
     {
         String testId = getTestTriangleId();
-        ValidatableResponse response = deleteTriangle(testId);
-        response.statusCode(200);
-        Assert.assertTrue(response.extract().asString().contains(testId));
-        
+        deleteTriangle(testId).statusCode(200);
         getTriangle(testId).statusCode(404);
     }
     
+    @Test
+    public void listTrianglesTest()
+    {
+        String testId = getTestTriangleId();
+        ValidatableResponse response = listTriangles();
+        response.statusCode(200);
+        Assert.assertTrue(response.extract().asString().contains(testId));
+    }
 }

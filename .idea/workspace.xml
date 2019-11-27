@@ -32,7 +32,19 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="951d5c4d-e4d2-46f9-9a22-345181410a4b" name="Default Changelist" comment="" />
+    <list default="true" id="951d5c4d-e4d2-46f9-9a22-345181410a4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/bar42/natera/AddTriangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/bar42/natera/AddTriangleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/bar42/natera/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/bar42/natera/HttpCodesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/bar42/natera/HttpCodesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/com/bar42/natera/ManipulationsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/bar42/natera/ManipulationsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bar42/natera/AddTriangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bar42/natera/AddTriangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bar42/natera/HttpCodesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bar42/natera/HttpCodesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bar42/natera/ManipulationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bar42/natera/ManipulationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bar42/natera/util/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bar42/natera/Base.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,28 +72,36 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindBugs-IDEA-Workspace">
     <toolWindowEditorPreview>false</toolWindowEditorPreview>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1U80d1F2HDze73YtXALBMTz3NTW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="Ignore Files Support" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
@@ -100,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddTriangleTest.lineTriangle">
+  <component name="RunManager" selected="JUnit.AddTriangleTest.rateLimiting">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -113,7 +133,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddTriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddTriangleTest.differentSeparator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nateraq.test" />
       <extension name="coverage">
         <pattern>
@@ -123,30 +143,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bar42.natera" />
       <option name="MAIN_CLASS_NAME" value="com.bar42.natera.AddTriangleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddTriangleTest.ImpossibleTriangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nateraq.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bar42.natera.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bar42.natera" />
-      <option name="MAIN_CLASS_NAME" value="com.bar42.natera.AddTriangleTest" />
-      <option name="METHOD_NAME" value="ImpossibleTriangle" />
+      <option name="METHOD_NAME" value="differentSeparator" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddTriangleTest.NegativeTriangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddTriangleTest.equalFloatTriangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nateraq.test" />
       <extension name="coverage">
         <pattern>
@@ -156,14 +160,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bar42.natera" />
       <option name="MAIN_CLASS_NAME" value="com.bar42.natera.AddTriangleTest" />
-      <option name="METHOD_NAME" value="NegativeTriangle" />
+      <option name="METHOD_NAME" value="equalFloatTriangle" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddTriangleTest.lineTriangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddTriangleTest.rateLimiting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nateraq.test" />
       <extension name="coverage">
         <pattern>
@@ -173,14 +177,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bar42.natera" />
       <option name="MAIN_CLASS_NAME" value="com.bar42.natera.AddTriangleTest" />
-      <option name="METHOD_NAME" value="lineTriangle" />
+      <option name="METHOD_NAME" value="rateLimiting" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddTriangleTest.zeroTriangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManipulationsTest.getTriangleAreaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nateraq.test" />
       <extension name="coverage">
         <pattern>
@@ -189,8 +193,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.bar42.natera" />
-      <option name="MAIN_CLASS_NAME" value="com.bar42.natera.AddTriangleTest" />
-      <option name="METHOD_NAME" value="zeroTriangle" />
+      <option name="MAIN_CLASS_NAME" value="com.bar42.natera.ManipulationsTest" />
+      <option name="METHOD_NAME" value="getTriangleAreaTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManipulationsTest.getTrianglePerimeterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nateraq.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bar42.natera.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bar42.natera" />
+      <option name="MAIN_CLASS_NAME" value="com.bar42.natera.ManipulationsTest" />
+      <option name="METHOD_NAME" value="getTrianglePerimeterTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -224,11 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddTriangleTest.lineTriangle" />
-        <item itemvalue="JUnit.AddTriangleTest" />
-        <item itemvalue="JUnit.AddTriangleTest.ImpossibleTriangle" />
-        <item itemvalue="JUnit.AddTriangleTest.zeroTriangle" />
-        <item itemvalue="JUnit.AddTriangleTest.NegativeTriangle" />
+        <item itemvalue="JUnit.AddTriangleTest.rateLimiting" />
+        <item itemvalue="JUnit.AddTriangleTest.differentSeparator" />
+        <item itemvalue="JUnit.AddTriangleTest.equalFloatTriangle" />
+        <item itemvalue="JUnit.ManipulationsTest.getTriangleAreaTest" />
+        <item itemvalue="JUnit.ManipulationsTest.getTrianglePerimeterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -242,10 +263,24 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="responseShouldHave.extract().asString()" language="JAVA" />
+        <watch expression="result.extract().asString()" language="JAVA" />
+        <watch expression="allTriangles.size" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
