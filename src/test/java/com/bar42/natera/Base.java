@@ -41,10 +41,9 @@ public class Base
     // For quiz purposes only.
     // Will never do that in production,
     // but shows that I'm able to do that
+    public class Triangle { String id; float firstSide,  secondSide,  thirdSide; }
     public static void cleanUp()
     {
-        class Triangle { String id; float firstSide,  secondSide,  thirdSide;}
-        
         ValidatableResponse response = listTriangles();
         response.statusCode(200);
         

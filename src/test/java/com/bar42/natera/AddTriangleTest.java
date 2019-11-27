@@ -86,18 +86,4 @@ public class AddTriangleTest extends Base
             .body("error", equalTo("Unprocessable Entity"))
             .body("message", equalTo("Cannot process input"));
     }
-    
-    @Test
-    public void rateLimiting() // "You can save up to 10 triangles"
-    {
-        cleanUp();
-        for (int i = 1; i <= 10; i++) addTriangle(3,4,5).statusCode(200);
-        addTriangle(3, 4, 5) // should get error adding 11th triangle
-            .statusCode(422)
-            .body("id", is(not(emptyString())))
-            .body("error", equalTo("Unprocessable Entity"))
-            .body("message", equalTo("Limit exceeded"));;
-        cleanUp();
-    }
-    
 }
