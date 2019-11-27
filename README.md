@@ -1,0 +1,18 @@
+## Comments on quiz
+- Added a [function](https://github.com/Archieru/natera/blob/master/src/test/java/com/bar42/natera/Base.java#L44) for quiz purposes only. Function covers:
+  - Reflection
+  - Threads
+  - Serialization/Deserialization
+- Not all test listed here should be performed this way:
+  - Most of the calculations (area, perimeter) should be executed as unit tests - not the API tests
+  - Some duplication exists for status code tests: some of them are already tested in different places (like when we add triangles)
+  - Some status codes should not be tested because we should not test the Spring framework.
+- Not all status codes described:
+  - 405: method not allowed if you try to POST to a given trialgle directly ([test](https://github.com/Archieru/natera/blob/master/src/test/java/com/bar42/natera/HttpCodesTest.java#L38) added)
+  - 415: unknown charset if charset is not set to JSON in POST method ([test](https://github.com/Archieru/natera/blob/master/src/test/java/com/bar42/natera/HttpCodesTest.java#L49) added)
+- Not all triangle issues are covered with requirements
+  - Triangles with negative sides are accepted ([fails](https://github.com/Archieru/natera/commit/f83325e7f4fe55d41ce417076ef3c57563ac2350/checks?check_suite_id=331724683) a [test](https://github.com/Archieru/natera/blob/master/src/test/java/com/bar42/natera/AddTriangleTest.java#L47))
+  - Triangles with zero area (technically - lines) are acceptes ([fails](https://github.com/Archieru/natera/commit/f83325e7f4fe55d41ce417076ef3c57563ac2350/checks?check_suite_id=331724683) a [test](https://github.com/Archieru/natera/blob/master/src/test/java/com/bar42/natera/AddTriangleTest.java#L69))
+- Rate limiting:
+  - Allows to store 11 triangles instead of 10  ([fails](https://github.com/Archieru/natera/commit/f83325e7f4fe55d41ce417076ef3c57563ac2350/checks?check_suite_id=331724683) a [test](https://github.com/Archieru/natera/blob/master/src/test/java/com/bar42/natera/RateLimitingTest.java#L20))
+- I prefer more conversation during the work - this solves most questions before they even appear
